@@ -1,11 +1,70 @@
 body {
 	padding: 0;
 	margin: 0;
+	background-color: #e7e7e7;
+}
+
+/* Navbar */
+.navbar li {
+	list-style: none;
+	display: inline;
+}
+
+.navbar a {
+	color: black;
+	text-decoration: none;
+	padding: 14px 16px;
+}
+
+.navbar a:hover {
+	background-color: #d8d8d8;
+}
+
+/* Container */
+
+.container {
 	display: grid;
 	justify-content: center;
 	align-content: center;
 	text-align: center;
-	height: 100vh;
+	/* height: 100vh; */
 	overflow: hidden;
 	background-color: #e7e7e7;
+}
+
+.result {
+    /* animation: fadeout 1s; */
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fadein-element {
+    transition: 0.5s ease-in-out;
+	/* animation: fadein 1s; */
+    opacity: 1;
+}
+
+.fadeout-element {
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+/* Animations */
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeout {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }

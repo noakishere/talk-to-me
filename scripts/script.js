@@ -1,8 +1,30 @@
+// Constants
+const dialogues = [
+	{
+		acceptedAnswer: "hello",
+		dialogueAnswer: "I love you",
+	},
+	{
+		acceptedAnswer: "bye",
+		dialogueAnswer: "I love you dude",
+	},
+];
+
+const fadeInClassName = "fadein-element";
+const fadeOutClassName = "fadeout-element";
+
+// Dom elements
+// const answerP = document.getElementById("result");
+const answerP = document.querySelector(".result");
+
 let capture;
 
+let index = 0;
+
 function setup() {
-	// Camera setup
-	createCanvas(600, 350);
+	// Canvas Setup
+	var myCanvas = createCanvas(600, 350);
+	myCanvas.parent("canvasContainer");
 	capture = createCapture(VIDEO);
 	capture.size(320, 240);
 	capture.hide();
@@ -26,14 +48,11 @@ function speechRecProcess() {
 	speechRec.start(continous, interim);
 
 	function gotSpeech() {
-		if (speechRec.resultValue) {
-			if (document.getElementById("speechResult") == null) {
-				let p = createP(speechRec.resultString);
-				p.id("speechResult");
-			} else {
-				document.getElementById("speechResult").innerHTML =
-					speechRec.resultString;
-			}
+		if (speechRec.resultValue && index < dialogues.length && speechRec.resultString.toLowerCase() === dialogues[index].acceptedAnswer.toLowerCase()) {
+            
+            answerP.innerHTML = dialogues[index].dialogueAnswer;
+            
+			index++;
 		}
 		console.log(speechRec);
 	}
