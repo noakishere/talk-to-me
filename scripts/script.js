@@ -14,34 +14,89 @@ const fadeInClassName = "fadein-element";
 const fadeOutClassName = "fadeout-element";
 
 // Dom elements
-// const answerP = document.getElementById("result");
 const answerP = document.querySelector(".result");
+const canvasContainer = document.querySelector("#canvasContainer");
 
+// SetupElements
 let capture;
+let speechRec;
+
+let mySong;
+let bg;
+
+let isStarted = false;
 
 let index = 0;
+
+function preload() {
+    // Sound setup
+    // mySong = loadSound("assets/songs/leit.mp3");
+}
 
 function setup() {
 	// Canvas Setup
 	var myCanvas = createCanvas(600, 350);
 	myCanvas.parent("canvasContainer");
-	capture = createCapture(VIDEO);
-	capture.size(320, 240);
-	capture.hide();
+	
+    // Video setup
+    
+    // Song setup
+    // mySong.loop();
+    // mySong.setVolume(0.5);
+    // mySong.rate(2);
 
-	speechRecProcess();
+    // Speech input setup
+	
 }
 
 function draw() {
+    
+    if(isStarted){
+        canvasContainer.style.display = "block";
+    }
+
 	background(255);
-	image(capture, 0, 0, 600, 350);
+	if(capture != null){
+        image(capture, 0, 0, 600, 350);
+    } 
 	filter(INVERT);
 }
+
+function startMe() {
+    isStarted = true;
+    setUpVideo();
+    speechRecProcess();
+
+    index = 0;
+
+    document.querySelector(".startButton").style.display = "none";
+    document.querySelector(".endButton").style.display = "block";
+}
+
+function endMe() {
+    capture.remove(); // stops webcam
+    speechRec.stop();
+
+    isStarted = false;
+    canvasContainer.style.display = "none";
+    answerP.innerHTML = "";
+
+    document.querySelector(".endButton").style.display = "none";
+    document.querySelector(".startButton").style.display = "block";
+    document.querySelector(".startButton").innerHTML = "Restart";
+}
+
+function setUpVideo() {
+    capture = createCapture(VIDEO);
+	capture.size(320, 240);
+	capture.hide();
+}
+
 
 function speechRecProcess() {
 	// Speech rec
 	let lang = navigator.language || "en-US";
-	let speechRec = new p5.SpeechRec(lang, gotSpeech);
+	speechRec = new p5.SpeechRec(lang, gotSpeech);
 
 	let continous = true;
 	let interim = false;

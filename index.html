@@ -4,11 +4,21 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- libraries -->
 		<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.js" integrity="sha512-U2sgwrFhl+Tgx9iGH9h5Ba2WyIjyCes+D0prtIFw3a0V+/fkaeL5Cd/VjyPHno9kUPE1rnNhBGTyvtZsfJp0xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>
 
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
 		<link rel="stylesheet" href="style/style.css" />
-		<title>jtm</title>
+		
+        <title>jtm</title>
 	</head>
 	<body>
 		<div class="navbar">
@@ -20,14 +30,16 @@
 					<a href="">Disclaimers</a>
 				</li>
 				<li>
-					<a href="">Github repo</a>
+					<a href="https://github.com/noakishere/jtm" target="_blank">Github repo</a>
 				</li>
 			</ul>
 		</div>
 
 		<div class="container">
-			<h1>hello</h1>
-
+			<h1>Are you ready to start</h1>
+            <button class="startButton" onclick="startMe();">Start</button>
+            <button class="endButton" onclick="endMe();">End</button>
+            
 			<div id="canvasContainer"></div>
 
 			<div class="resultContainer">
