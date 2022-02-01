@@ -130,7 +130,7 @@ function readTextFile(file, callback) {
 }
 
 //usage:
-readTextFile("/assets/dialogues/dialogue.json", function(text){
+readTextFile("/jtm/assets/dialogues/dialogue.json", function(text){
     var data = JSON.parse(text);
     answerP.innerHTML = data[1].text + " " + data[1].answer[0];
     answerP.classList.add(fadeInClassName);
