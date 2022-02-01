@@ -41,20 +41,21 @@ body {
 }
 
 .result {
-    /* animation: fadeout 1s; */
+    /* animation: fadeout 1s ease-in-out; */
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
 .fadein-element {
-    transition: 0.5s ease-in-out;
-	/* animation: fadein 1s; */
-    opacity: 1;
+    /* transition: 0.5s ease-in-out; */
+	animation: fadein 1s ease-in-out;
+    /* opacity: 1; */
 }
 
 .fadeout-element {
-    transition: 0.5s ease-in-out;
-    opacity: 0;
+    /* transition: 0.5s ease-in-out; */
+    /* opacity: 0; */
+    animation: fadeout 1s ease-in-out;
 }
 
 /* Button */

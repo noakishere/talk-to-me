@@ -10,6 +10,8 @@ const dialogues = [
 	},
 ];
 
+const JSONPath = "/assets/dialogues/dialogue.json";
+
 const fadeInClassName = "fadein-element";
 const fadeOutClassName = "fadeout-element";
 
@@ -112,3 +114,25 @@ function speechRecProcess() {
 		console.log(speechRec);
 	}
 }
+
+
+
+function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+}
+
+//usage:
+readTextFile("/assets/dialogues/dialogue.json", function(text){
+    var data = JSON.parse(text);
+    answerP.innerHTML = data[1].text + " " + data[1].answer[0];
+    answerP.classList.add(fadeInClassName);
+    console.log(data);
+});

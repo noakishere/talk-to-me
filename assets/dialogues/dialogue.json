@@ -1,0 +1,10 @@
+[
+    {
+        "text": "This is a sample text",
+        "answer": ["answer 1", "answer2"]
+    },
+    {
+        "text": "This is a sample text2",
+        "answer": ["answer 3", "answer4"]
+    }
+]
