@@ -2,7 +2,12 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: #e7e7e7;
-    font-family: 'Lato', sans-serif;
+	font-family: "Lato", sans-serif;
+}
+
+.red {
+	color: red;
+	animation: fadein 1s;
 }
 
 /* Navbar */
@@ -15,6 +20,7 @@ body {
 	color: black;
 	text-decoration: none;
 	padding: 14px 16px;
+	font-size: 0.9vmax;
 }
 
 .navbar a:hover {
@@ -24,8 +30,8 @@ body {
 /* Canvas style */
 
 #canvasContainer {
-    display: none;
-    animation: fadein 1s;
+	display: none;
+	animation: fadein 1s;
 }
 
 /* Container */
@@ -40,52 +46,60 @@ body {
 	background-color: #e7e7e7;
 }
 
+.title {
+	animation: fade-bg 15s ease-in-out;
+	animation-delay: 0;
+	animation-iteration-count: infinite;
+	animation-direction: forward;
+}
+
 .result {
-    /* animation: fadeout 1s ease-in-out; */
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+	/* animation: fadeout 1s ease-in-out; */
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
 }
 
 .fadein-element {
-    /* transition: 0.5s ease-in-out; */
+	/* transition: 0.5s ease-in-out; */
 	animation: fadein 1s ease-in-out;
-    /* opacity: 1; */
+	/* opacity: 1; */
 }
 
 .fadeout-element {
-    /* transition: 0.5s ease-in-out; */
-    /* opacity: 0; */
-    animation: fadeout 1s ease-in-out;
+	/* transition: 0.5s ease-in-out; */
+	/* opacity: 0; */
+	animation: fadeout 1s ease-in-out;
 }
 
 /* Button */
 
-.startButton{
-    padding: 5%;
-    background-color: #e7e7e7;
-    border: 0;
-    /* border-bottom: 0.1px solid black; */
-    font-family: 'Lato', sans-serif;
-    cursor: pointer;
+.startButton {
+	padding: 5%;
+	background-color: #e7e7e7;
+	border: 0;
+	/* border-bottom: 0.1px solid black; */
+	font-family: "Lato", sans-serif;
+	font-size: 1vmax;
+	cursor: pointer;
 }
 
 .startButton:hover {
-    text-decoration:line-through;
+	text-decoration: line-through;
 }
 
 .endButton {
-    margin: 0 0;
-    display: none;
-    padding: 5%;
-    background-color: #e7e7e7;
-    border: 0;
-    /* border-bottom: 0.1px solid black; */
-    font-family: 'Lato', sans-serif;
-    cursor: pointer;
+	margin: 0 0;
+	display: none;
+	padding: 5%;
+	background-color: #e7e7e7;
+	border: 0;
+	/* border-bottom: 0.1px solid black; */
+	font-family: "Lato", sans-serif;
+	cursor: pointer;
 }
 
 .endButton:hover {
-    text-decoration:line-through;
+	text-decoration: line-through;
 }
 
 /* Animations */
@@ -94,6 +108,7 @@ body {
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
@@ -103,7 +118,34 @@ body {
 	from {
 		opacity: 1;
 	}
+
 	to {
+		opacity: 0;
+	}
+}
+
+@keyframes fade-bg {
+	0% {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	51% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: 1;
+	}
+
+	100% {
 		opacity: 0;
 	}
 }

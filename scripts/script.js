@@ -83,6 +83,8 @@ function endMe() {
     canvasContainer.style.display = "none";
     answerP.innerHTML = "";
 
+    index = 0;
+
     document.querySelector(".endButton").style.display = "none";
     document.querySelector(".startButton").style.display = "block";
     document.querySelector(".startButton").innerHTML = "Restart";
@@ -130,7 +132,7 @@ function readTextFile(file, callback) {
 }
 
 //usage:
-readTextFile("/jtm/assets/dialogues/dialogue.json", function(text){
+readTextFile("/assets/dialogues/dialogue.json", function(text){
     var data = JSON.parse(text);
     answerP.innerHTML = data[1].text + " " + data[1].answer[0];
     answerP.classList.add(fadeInClassName);
