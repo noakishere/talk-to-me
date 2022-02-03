@@ -62,7 +62,7 @@ function readTextFile(file, callback) {
 }
 
 //usage:
-readTextFile("jtm/assets/dialogues/dialogue.json", function (text) {
+readTextFile("/jtm/assets/dialogues/dialogue.json", function (text) {
 	textDialogues = JSON.parse(text);
 	console.log(textDialogues);
 });
