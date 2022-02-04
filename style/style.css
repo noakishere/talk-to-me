@@ -6,7 +6,7 @@ body {
 }
 
 .red {
-	color: red;
+	/* color: red; */
 	animation: fadein 1s;
 }
 
@@ -74,7 +74,7 @@ body {
 /* Button */
 
 .startButton {
-	padding: 5%;
+	/* padding: 5%; */
 	background-color: #e7e7e7;
 	border: 0;
 	/* border-bottom: 0.1px solid black; */
@@ -100,6 +100,30 @@ body {
 
 .endButton:hover {
 	text-decoration: line-through;
+}
+
+/* Paragraph Container */
+
+.paragraph-container {
+	font-family: "PT Sans", sans-serif;
+	margin: 2%;
+	background-color: #d8d8d8;
+	padding: 2%;
+	/* width: 100%; */
+	/* animation: scaleDiv 1s ease-in-out; */
+	display: none;
+}
+
+.paragraph-container div p {
+	text-align: justify;
+}
+
+.paragraph-container div {
+	margin-top: 2%;
+}
+
+.fadein-element {
+	animation: fadein 5s;
 }
 
 /* Animations */
@@ -147,5 +171,21 @@ body {
 
 	100% {
 		opacity: 0;
+	}
+}
+
+@keyframes scaleDiv {
+	/* from {
+		height: 0%;
+	}
+	to {
+		transform: scaleY(1);
+	} */
+
+	0% {
+		transform: scaleY(0);
+	}
+	100% {
+		transform: scaleY(1);
 	}
 }
