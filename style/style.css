@@ -37,13 +37,13 @@ body {
 /* Container */
 
 .container {
-	display: grid;
+	/* display: grid; */
 	justify-content: center;
 	align-content: center;
 	text-align: center;
 	/* height: 100vh; */
-	overflow: hidden;
-	background-color: #e7e7e7;
+	/* overflow: hidden; */
+	/* background-color: #e7e7e7; */
 }
 
 .title {
@@ -109,14 +109,14 @@ body {
 	margin: 2%;
 	background-color: #d8d8d8;
 	padding: 2%;
-	/* width: 100%; */
+	width: 100%;
 	/* animation: scaleDiv 1s ease-in-out; */
 	display: none;
 }
 
-.paragraph-container div p {
-	text-align: justify;
-}
+/* .paragraph-container div p {
+	text-align: center;
+} */
 
 .paragraph-container div {
 	margin-top: 2%;

@@ -59,7 +59,15 @@ function dialogueModel(dialogueJSON) {
 		this.options.forEach((option) => {
 			var newButton = document.createElement("button");
 			newButton.textContent = option;
+			newButton.classList.add("startButton");
+			// newButton.onclick = processDialogueModel(textDialogues[dialogueIndex]);
 			buttonContainer.appendChild(newButton);
+			newButton.addEventListener("click", function () {
+				console.log("hello");
+				let newP = new dialogueModel(textDialogues[dialogueIndex]);
+				this.style.display = "none";
+				dialogueIndex++;
+			});
 		});
 
 		paragraphDIV.appendChild(buttonContainer);
@@ -77,13 +85,12 @@ function startMe() {
 
 	// pContainer.appendChild(firstParagraph);
 	pContainer.style.display = "block";
+	document.querySelector(".startButton").style.display = "none";
 	let newP = new dialogueModel(textDialogues[dialogueIndex]);
 	dialogueIndex++;
 }
 
-function processDialogueModel(dm) {
-	let dialogueModel = dm;
-}
+function processDialogueModel(dm) {}
 
 // Load json file
 function readTextFile(file, callback) {
