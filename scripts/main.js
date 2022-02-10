@@ -24,8 +24,13 @@ function dialogueModel(dialogueJSON) {
 
 	// Process paragraph
 	let paragraph = document.createElement("p");
+	paragraphID = `p${dialogueIndex}`;
+	paragraph.classList.add(paragraphID);
+
 	if (this.cssClass) {
-		paragraph.classList.add(this.cssClass);
+		this.cssClass.forEach((newClass) => {
+			paragraph.classList.add(newClass);
+		});
 	}
 
 	paragraph.innerHTML = this.text;
@@ -58,41 +63,64 @@ function dialogueModel(dialogueJSON) {
 
 		this.options.forEach((option) => {
 			var newButton = document.createElement("button");
+
 			newButton.textContent = option;
 			newButton.classList.add("startButton");
-			// newButton.onclick = processDialogueModel(textDialogues[dialogueIndex]);
-			buttonContainer.appendChild(newButton);
+
 			newButton.addEventListener("click", function () {
-				console.log("hello");
 				let newP = new dialogueModel(textDialogues[dialogueIndex]);
 				this.style.display = "none";
 				dialogueIndex++;
 			});
+
+			buttonContainer.appendChild(newButton);
 		});
 
+		paragraphDIV.appendChild(buttonContainer);
+	} else if (this.options == null && dialogueIndex < textDialogues.length) {
+		let buttonContainer = document.createElement("div");
+		buttonContainer.classList.add("buttonContainer");
+
+		var newButton = document.createElement("button");
+		newButton.textContent = "continue";
+		newButton.classList.add("startButton");
+
+		newButton.addEventListener("click", function () {
+			let newP = new dialogueModel(textDialogues[dialogueIndex]);
+			this.style.display = "none";
+			dialogueIndex++;
+		});
+
+		buttonContainer.appendChild(newButton);
 		paragraphDIV.appendChild(buttonContainer);
 	}
 
 	pContainer.appendChild(paragraphDIV);
+
+	if (this.cssClass && this.cssClass.includes("right")) {
+		anime({
+			targets: `.${paragraphID}`,
+			translateX: 250,
+			easing: "easeOutExpo",
+		});
+	}
 }
 
+// Main start function
 function startMe() {
-	// console.log(new dialogueModel(textDialogues[1]));
-	// let firstParagraph = document.createElement("div");
+	anime({
+		targets: ".paragraph-container",
+		backgroundColor: "#d8d8d8",
+		easing: "easeOutExpo",
+	});
 
-	// firstParagraph.innerHTML = textDialogues[dialogueIndex].text;
-	// firstParagraph.classList.add("text-paragraph");
-
-	// pContainer.appendChild(firstParagraph);
-	pContainer.style.display = "block";
 	document.querySelector(".startButton").style.display = "none";
 	let newP = new dialogueModel(textDialogues[dialogueIndex]);
 	dialogueIndex++;
 }
 
-function processDialogueModel(dm) {}
-
 // Load json file
+
 function readTextFile(file, callback) {
 	var rawFile = new XMLHttpRequest();
 	rawFile.overrideMimeType("application/json");
@@ -108,5 +136,6 @@ function readTextFile(file, callback) {
 //usage:
 readTextFile("./assets/dialogues/dialogue.json", function (text) {
 	textDialogues = JSON.parse(text);
+	console.log(textDialogues.length);
 	console.log(textDialogues);
 });
