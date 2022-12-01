@@ -4,7 +4,7 @@ let textDialogues;
 var dialogueIndex = 0;
 
 var backgroundMusic = new Howl({
-	src: ["../assets/songs/theme.mp3"],
+	src: ["assets/songs/theme.mp3"],
 	loop: true,
 	volume: 0.3,
 	// rate: 2.0,
