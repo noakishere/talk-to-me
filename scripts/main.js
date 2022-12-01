@@ -2,7 +2,7 @@ const pContainer = document.querySelector(".paragraph-container");
 
 let textDialogues;
 var dialogueIndex = 0;
-console.log(rightSide);
+
 var backgroundMusic = new Howl({
 	src: ["./assets/songs/Traverse.mp3"],
 	loop: true,
