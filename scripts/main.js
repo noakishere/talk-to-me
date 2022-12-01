@@ -4,13 +4,13 @@ let textDialogues;
 var dialogueIndex = 0;
 
 var backgroundMusic = new Howl({
-	src: ["./assets/songs/Traverse.mp3"],
+	src: ["../assets/songs/theme.mp3"],
 	loop: true,
-	volume: 0.5,
-	rate: 2.0,
+	volume: 0.3,
+	// rate: 2.0,
 });
 
-// backgroundMusic.play();
+backgroundMusic.play();
 
 function dialogueModel(dialogueJSON) {
 	this.text = dialogueJSON.text;
@@ -43,11 +43,20 @@ function dialogueModel(dialogueJSON) {
 	if (this.sound) {
 		var howlerSound = new Howl({
 			src: dialogueJSON.sound,
-			volume: 0.25,
+			volume: 0.1,
 			loop: false,
 		});
 
-		// howlerSound.play();
+		howlerSound.play();
+	} else {
+		var howlerSound = new Howl({
+			src: "assets/songs/blip.mp3",
+			volume: 0.2,
+			rate: Math.random() * 2 + 1,
+			loop: false,
+		});
+
+		howlerSound.play();
 	}
 
 	// Process image
