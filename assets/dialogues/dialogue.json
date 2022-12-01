@@ -12,9 +12,22 @@
 		"sound": "./assets/songs/Randomize.wav"
 	},
 	{
-		"text": "This is a sample text",
+		"text": "The storyteller shrugged. No one knows for sure.",
 		"cssClass": ["red"],
-		"options": ["answer 3", "answer4"],
+		"1options": ["answer 3", "answer4"],
 		"sound": "./assets/songs/Randomize.wav"
+	},
+	{
+		"text": "The truth about stories is that that’s <b>all</b> we are.",
+		"cssClass": ["left"]
+	},
+	{
+		"text": "The iranian filmmaker Abbas Kiarostami tells us: “<i>A story starts before we encounter it and concludes long after we have turned away.</i>” ",
+		"image": "assets/images/main-pics/kiarostami-close-up.gif"
+	},
+	{
+		"text": "I used to think that in order to fully live, one must belong somewhere first. I lived in a society of paradoxical freaks who believed that as long as you live, you serve someone or something. I didn’t truly live because I believed in a different idea than the one I was taught. In 2012 my family decided to emigrate from Iran.",
+		"image": "assets/images/main-pics/fam.gif",
+		"options": ["Change might be good?"]
 	}
 ]

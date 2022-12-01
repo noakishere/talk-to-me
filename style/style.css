@@ -3,6 +3,10 @@
 	src: url("assets/fonts/Minipax-master/fonts/webfonts/Minipax-Regular.woff");
 }
 
+:root {
+	--my-var: 250;
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -34,6 +38,8 @@ body {
 
 img {
 	margin-bottom: 2%;
+	width: 500px;
+	height: 250px;
 }
 
 /* Canvas style */
@@ -115,7 +121,6 @@ img {
 
 .paragraph-container {
 	font-family: "PT Sans", sans-serif;
-	margin: 2%;
 	/* background-color: #d8d8d8; */
 	padding: 2%;
 	width: 100%;
@@ -201,4 +206,10 @@ img {
 	100% {
 		transform: scaleY(1);
 	}
+}
+
+/* Responsive design */
+
+@media only screen and (min-width: 960px) {
+	/* styles for browsers larger than 960px; */
 }
