@@ -8,7 +8,7 @@
 	},
 	{
 		"text": "But in all the tellings of all the tellers, the world never leaves the turtle’s back. And the turtle never swims away. One time, it was in <span class='test-me'>Tehran</span> I think, a dark-haired boy in the audience asked about the turtle and the earth. If the earth was on the back of a turtle, what was below the turtle? Another turtle, the storyteller told him. And below that turtle? Another turtle. And below that? Another turtle.The boy began to stare, enjoying the game, I imagine. So how many turtles are there? He wanted to know.",
-		"image": "assets/images/main-pics/turtle01.gif",
+		"image": "assets/images/main-pics/turtle02.gif",
 		"sound": "./assets/songs/Randomize.wav"
 	},
 	{
@@ -28,7 +28,8 @@
 	{
 		"text": "I used to think that in order to fully live, one must belong somewhere first. I lived in a society of paradoxical freaks who believed that as long as you live, you serve someone or something. I didn’t truly live because I believed in a different idea than the one I was taught. In 2012 my family decided to emigrate from Iran.",
 		"image": "assets/images/main-pics/fam.gif",
-		"options": ["Change might be good?"]
+		"options": ["Change might be good?"],
+		"cssClass": ["right-image"]
 	},
 	{
 		"text": "A hard decision followed by the tragic exit of my grandmother from our lives.",
@@ -41,5 +42,73 @@
 	{
 		"text": "My teachers also looked forward to my departure because I didn’t truly belong there, they believed. “It’s good that you’re leaving, you know.” One of them told me.",
 		"options": ["Leave while you can, it will always hurt to come back"]
+	},
+	{
+		"text": " I’ll never forget the day I saw his face among many other political prisoners on national television. A lesson to be learned for the younger generations, they probably thought."
+	},
+	{
+		"text": "He was physically beaten up and emotionally torn out."
+	},
+	{
+		"text": " ",
+		"options": ["Aged"]
+	},
+	{
+		"text": " ",
+		"options": ["Confused"]
+	},
+	{
+		"text": " ",
+		"options": ["Even desperate"]
+	},
+	{
+		"text": "He didn’t belong because he believed in an idea, the wrong one that is."
+	},
+	{
+		"text": "Many moons later, upon his release, he moved to a university in Boston, or Rome, or London, or far away enough that would eventually forbid him from his mother’s last living days.",
+		"options": ["Flowing around the globe, in search of a home"],
+		"image": "assets/images/main-pics/airplane.gif"
+	},
+	{
+		"text": "It was around the second year of my residence in a truly wonderful and <i>free</i> country that I finally learned about their true history."
+	},
+	{
+		"text": "I saw the fruits of their labour.",
+		"cssClass": ["left"]
+	},
+	{
+		"text": "From the corner of a street in downtown Montreal, a seemingly old torn out man came to me with a funny accent and said “For all the walks you take on this land, you owes me a drink.”",
+		"image": "assets/images/main-pics/drinks.gif"
+	},
+	{
+		"text": "My integration-aide teacher in high school told me some of the history behind the man’s demand, and I eventually learned that it’s not only in Iran where some people aren’t supposed to belong.",
+		"options": ["It's better to not question it much."]
+	},
+	{
+		"text": "Maybe freedom comes at a price",
+		"cssClass": ["right"]
+	},
+	{
+		"text": "maybe belonging is not for everyone",
+		"cssClass": ["left"],
+		"options": ["or at least so I thought"]
+	},
+	{
+		"text": "My teacher ended her story like this “It’s good that you’re living here, you know.” "
+	},
+	{
+		"text": "Yussef lived his days missing his motherland."
+	},
+	{
+		"text": "He cried and screamed,",
+		"cssClass": ["right"]
+	},
+	{
+		"text": "and longed for his past days",
+		"cssClass": ["left"]
+	},
+	{
+		"text": "fighting for his ideals.",
+		"options": ["what did they tell him?"]
 	}
 ]

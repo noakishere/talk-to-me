@@ -42,6 +42,10 @@ img {
 	height: 250px;
 }
 
+.right-image img {
+	float: right;
+}
+
 /* Canvas style */
 
 #canvasContainer {

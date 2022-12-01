@@ -107,7 +107,7 @@ function dialogueModel(dialogueJSON) {
 			translateX: 250,
 			easing: "easeOutExpo",
 			duration: 2000,
-			delay: 1000,
+			delay: 500,
 		});
 	} else if (this.cssClass && this.cssClass.includes("left")) {
 		anime({
@@ -115,7 +115,7 @@ function dialogueModel(dialogueJSON) {
 			translateX: -250,
 			easing: "easeOutExpo",
 			duration: 2000,
-			delay: 1000,
+			delay: 500,
 		});
 	}
 }
