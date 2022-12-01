@@ -12,4 +12,4 @@ Inspired by Thomas King's The Truth about Stories: A Native Narrative
 
 ### Credits
 
-All work is produced by Kamyar Karimi - Fall 2022
+All work is developed by Kamyar Karimi - Fall 2022
