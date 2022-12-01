@@ -5,12 +5,12 @@ var dialogueIndex = 0;
 
 var backgroundMusic = new Howl({
 	src: ["./assets/songs/Traverse.mp3"],
-	loop: false,
+	loop: true,
 	volume: 0.5,
 	rate: 2.0,
 });
 
-// howlerSound.play();
+// backgroundMusic.play();
 
 function dialogueModel(dialogueJSON) {
 	this.text = dialogueJSON.text;
@@ -28,9 +28,13 @@ function dialogueModel(dialogueJSON) {
 	paragraph.classList.add(paragraphID);
 
 	if (this.cssClass) {
-		this.cssClass.forEach((newClass) => {
-			paragraph.classList.add(newClass);
-		});
+		if (Array.isArray(this.cssClass)) {
+			this.cssClass.forEach((newClass) => {
+				paragraph.classList.add(newClass);
+			});
+		} else {
+			paragraph.classList.add(this.cssClass);
+		}
 	}
 
 	paragraph.innerHTML = this.text;
@@ -102,6 +106,16 @@ function dialogueModel(dialogueJSON) {
 			targets: `.${paragraphID}`,
 			translateX: 250,
 			easing: "easeOutExpo",
+			duration: 2000,
+			delay: 1000,
+		});
+	} else if (this.cssClass && this.cssClass.includes("left")) {
+		anime({
+			targets: `.${paragraphID}`,
+			translateX: -250,
+			easing: "easeOutExpo",
+			duration: 2000,
+			delay: 1000,
 		});
 	}
 }

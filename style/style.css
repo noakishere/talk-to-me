@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Minipax";
+	src: url("assets/fonts/Minipax-master/fonts/webfonts/Minipax-Regular.woff");
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -6,7 +11,7 @@ body {
 }
 
 .red {
-	/* color: red; */
+	color: red;
 	animation: fadein 1s;
 }
 
@@ -25,6 +30,10 @@ body {
 
 .navbar a:hover {
 	background-color: #d8d8d8;
+}
+
+img {
+	margin-bottom: 2%;
 }
 
 /* Canvas style */
