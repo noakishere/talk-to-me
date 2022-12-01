@@ -1,6 +1,7 @@
 @font-face {
 	font-family: "Minipax";
-	src: url("assets/fonts/Minipax-master/fonts/webfonts/Minipax-Regular.woff");
+	src: url("../assets/fonts/Minipax-master/fonts/ttf/Minipax-Regular.ttf");
+	/* src: url("../assets/fonts/savate-regular.otf"); */
 }
 
 :root {

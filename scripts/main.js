@@ -81,7 +81,7 @@ function dialogueModel(dialogueJSON) {
 		});
 
 		paragraphDIV.appendChild(buttonContainer);
-	} else if (this.options == null && dialogueIndex < textDialogues.length) {
+	} else if (this.options == null && dialogueIndex < textDialogues.length - 1) {
 		console.log(
 			`${dialogueIndex} is dialogueIndex and ${textDialogues.length} is array length`
 		);
@@ -114,6 +114,9 @@ function dialogueModel(dialogueJSON) {
 		newButton.addEventListener("click", function () {
 			window.open("pages/about.html", "_blank");
 		});
+
+		buttonContainer.appendChild(newButton);
+		paragraphDIV.appendChild(buttonContainer);
 	}
 
 	pContainer.appendChild(paragraphDIV);
