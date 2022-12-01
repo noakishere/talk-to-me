@@ -1,14 +1,14 @@
 [
 	{
 		"text": "There is a story I know. It’s about the earth and how it floats in space on the back of a turtle. I’ve heard this story many times, and each time someone tells the story, it changes. Sometimes the change is simply in the voice of the storyteller. Sometimes the change is in the details. Sometimes in the order of events. Other times it’s the dialogue or the response of the audience.",
-		"image": "photoshop-stuff/mirror01.gif",
+		"image": "images/main-pics/mirror01.gif",
 		"options": ["Overrated Existential Crisis Incoming."],
 		"cssClass": "redd",
 		"sound": "./assets/songs/Randomize7.wav"
 	},
 	{
 		"text": "But in all the tellings of all the tellers, the world never leaves the turtle’s back. And the turtle never swims away. One time, it was in <span class='test-me'>Tehran</span> I think, a dark-haired boy in the audience asked about the turtle and the earth. If the earth was on the back of a turtle, what was below the turtle? Another turtle, the storyteller told him. And below that turtle? Another turtle. And below that? Another turtle.The boy began to stare, enjoying the game, I imagine. So how many turtles are there? He wanted to know.",
-		"image": "photoshop-stuff/turtle01.gif",
+		"image": "images/main-pics/turtle01.gif",
 		"sound": "./assets/songs/Randomize.wav"
 	},
 	{
