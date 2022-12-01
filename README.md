@@ -9,3 +9,7 @@ Inspired by Thomas King's The Truth about Stories: A Native Narrative
 - [Howler.js] https://howlerjs.com/
 - [Anime.js] https://animejs.com/
 - [Bootstrap] https://getbootstrap.com/
+
+### Credits
+
+All work is produced by Kamyar Karimi - Fall 2022
