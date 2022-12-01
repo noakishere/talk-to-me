@@ -29,5 +29,17 @@
 		"text": "I used to think that in order to fully live, one must belong somewhere first. I lived in a society of paradoxical freaks who believed that as long as you live, you serve someone or something. I didn’t truly live because I believed in a different idea than the one I was taught. In 2012 my family decided to emigrate from Iran.",
 		"image": "assets/images/main-pics/fam.gif",
 		"options": ["Change might be good?"]
+	},
+	{
+		"text": "A hard decision followed by the tragic exit of my grandmother from our lives.",
+		"cssClass": ["right"]
+	},
+	{
+		"text": "We were ready to leave and to never look back.",
+		"cssClass": ["left"]
+	},
+	{
+		"text": "My teachers also looked forward to my departure because I didn’t truly belong there, they believed. “It’s good that you’re leaving, you know.” One of them told me.",
+		"options": ["Leave while you can, it will always hurt to come back"]
 	}
 ]
