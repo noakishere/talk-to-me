@@ -82,6 +82,9 @@ function dialogueModel(dialogueJSON) {
 
 		paragraphDIV.appendChild(buttonContainer);
 	} else if (this.options == null && dialogueIndex < textDialogues.length) {
+		console.log(
+			`${dialogueIndex} is dialogueIndex and ${textDialogues.length} is array length`
+		);
 		let buttonContainer = document.createElement("div");
 		buttonContainer.classList.add("buttonContainer");
 
@@ -97,6 +100,20 @@ function dialogueModel(dialogueJSON) {
 
 		buttonContainer.appendChild(newButton);
 		paragraphDIV.appendChild(buttonContainer);
+	} else if (
+		this.options == null &&
+		dialogueIndex == textDialogues.length - 1
+	) {
+		let buttonContainer = document.createElement("div");
+		buttonContainer.classList.add("buttonContainer");
+
+		var newButton = document.createElement("button");
+		newButton.textContent = "the end.";
+		newButton.classList.add("startButton");
+
+		newButton.addEventListener("click", function () {
+			window.open("pages/about.html", "_blank");
+		});
 	}
 
 	pContainer.appendChild(paragraphDIV);

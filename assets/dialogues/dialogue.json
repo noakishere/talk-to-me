@@ -110,5 +110,88 @@
 	{
 		"text": "fighting for his ideals.",
 		"options": ["what did they tell him?"]
+	},
+	{
+		"text": "His therapist believed he was homesick, meaning he missed the land that allowed him to write and to manifest his rawest emotions and beliefs."
+	},
+	{
+		"text": "He was a walking corpse, merely following the news from the outside, hoping for the best to come."
+	},
+	{
+		"text": "He couldn’t move back, you know, political prison takes a serious toll on its residents."
+	},
+	{
+		"text": "His therapist told him “Son, you clearly miss your home. I suggest that you take a bowl and fill it with animal manure. Put your head inside it for ten seconds, and you should feel exactly how it felt back home.” ",
+		"image": "assets/images/main-pics/manure.gif"
+	},
+	{
+		"text": "Yussef didn’t exactly do that; however, in due course he swapped the manure-filled bowl with a bottle of alcohol."
+	},
+	{
+		"text": "Yussef smelled utterly similar to how the strange man smelled that night.",
+		"options": ["We wear our feelings"]
+	},
+	{
+		"text": "Their mothers probably missed them"
+	},
+	{
+		"text": "as they were circling through the tunnel of traumas they had to fight.",
+		"options": ["Circles don't end."]
+	},
+	{
+		"text": "The white man stole the natives’ homes and mocked and punished them for being homeless."
+	},
+	{
+		"text": "The man who thought himself to be superior.",
+		"cssClass": ["red"]
+	},
+	{
+		"text": "I learned this from books and history and living in the world of true democracy.",
+		"cssClass": ["left"]
+	},
+	{
+		"text": "The man who occupied our land did it because he thought his beliefs were superior to ours."
+	},
+	{
+		"text": "I learned this from hearing the stories and living them.",
+		"cssClass": ["right"]
+	},
+	{
+		"text": "Yussef was banished from his own country, because his beliefs made him a minority.",
+		"cssClass": ["left"]
+	},
+	{
+		"text": "The indigenous man didn’t belong to his own home, because he was forced to believe that he’s a minority.",
+		"cssClass": ["right"]
+	},
+	{
+		"text": "I, in the end, was exited because my questions of their beliefs made me a minority."
+	},
+	{
+		"text": "After all, the white man was as happy to see the Indian leave his home, as my west/white-culture-hating school teacher back home was to see mine. "
+	},
+	{
+		"text": "Take Yussef’s story, for instance. ",
+		"image": "assets/images/main-pics/lastport.gif"
+	},
+	{
+		"text": "It’s yours."
+	},
+	{
+		"text": "Do with it what you will."
+	},
+	{
+		"text": "Live it.",
+		"cssClass": ["right"]
+	},
+	{
+		"text": "Forget it..",
+		"cssClass": ["left"]
+	},
+	{
+		"text": "But don’t say in the years to come that you would have lived your life differently if only you had heard this story."
+	},
+	{
+		"text": "You’ve heard it now."
 	}
 ]
